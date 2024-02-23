@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: orange;
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        .box {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 60px;
+            border: 2px solid black;
+            /* animation: move 3s linear 1s 2 alternate; */
+            animation: jump 1s ease-out infinite alternate, slide 10s linear 1s infinite;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+        }
+
+        @keyframes jump{
+            from{
+
+            }
+            to{
+                transform: translateY(-80vh);
+            }
+        }
+
+        @keyframes slide{
+            from {}
+
+            to {
+                transform: translateX(80vw);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
+</body>
+
+</html>
